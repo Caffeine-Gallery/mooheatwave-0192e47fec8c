@@ -1,0 +1,8 @@
+type FarmLocation = 
+ record {
+   latitude: float64;
+   longitude: float64;
+ };
+service : {
+  getDairyFarms: () -> (vec FarmLocation) query;
+}
